@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Punit Powercare — APFC &amp; Switchgear Care, Nashik</title>
+<meta name="description" content="Thyristorised APFC panels, switchgear care and 24x7 service backup from Punit Powercare, Nashik.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#EEF0F1;
+    --panel:#FFFFFF;
+    --ink:#12181D;
+    --steel:#5B6570;
+    --line:#D7DBDE;
+    --amber:#FF7A1A;
+    --amber-ink:#8a3f00;
+    --red:#D62828;
+    --green:#1E8E5A;
+    --dark:#12181D;
+    --dark-2:#1B232B;
+    --lcd:#37FFA0;
+    --radius:14px;
+    --maxw:1180px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{
+    font-family:'Big Shoulders Display',sans-serif;
+    text-transform:uppercase;
+    letter-spacing:0.01em;
+    margin:0;
+    line-height:0.98;
+    color:var(--ink);
+  }
+  .mono{font-family:'IBM Plex Mono',monospace;}
+  a{color:inherit;}
+  img,svg{display:block;max-width:100%;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
+  section{position:relative;}
+  .eyebrow{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12.5px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--amber-ink);
+    display:flex;align-items:center;gap:10px;
+    margin-bottom:14px;
+    font-weight:600;
+  }
+  .eyebrow::before{
+    content:"";
+    width:22px;height:2px;background:var(--amber);
+    display:inline-block;
+  }
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:14px 26px;
+    border-radius:8px;
+    font-weight:700;
+    text-decoration:none;
+    font-size:15px;
+    border:2px solid transparent;
+    cursor:pointer;
+    transition:transform .15s ease, box-shadow .15s ease;
+    font-family:'Inter',sans-serif;
+  }
+  .btn:hover{transform:translateY(-2px);}
+  .btn-primary{background:var(--amber);color:#1a0d00;box-shadow:0 6px 0 0 #b5580a;}
+  .btn-primary:hover{box-shadow:0 8px 0 0 #b5580a;}
+  .btn-primary:active{transform:translateY(2px);box-shadow:0 3px 0 0 #b5580a;}
+  .btn-ghost{background:transparent;border-color:var(--ink);color:var(--ink);}
+  .btn-ghost:hover{background:var(--ink);color:#fff;}
+  .btn-light{background:#fff;color:var(--ink);}
+
+  /* ---------- NAV ---------- */
+  header{
+    position:sticky;top:0;z-index:100;
+    background:rgba(238,240,241,0.88);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .navbar{
+    max-width:var(--maxw);margin:0 auto;padding:14px 28px;
+    display:flex;align-items:center;justify-content:space-between;
+  }
+  .brand{display:flex;align-items:center;gap:10px;font-family:'Big Shoulders Display';font-weight:800;font-size:22px;text-transform:uppercase;letter-spacing:0.02em;}
+  .brand .bolt{width:20px;height:26px;flex:none;}
+  .brand span.small{display:block;font-family:'IBM Plex Mono';font-size:9.5px;letter-spacing:0.12em;color:var(--steel);text-transform:none;font-weight:500;margin-top:-3px;}
+  nav.links{display:flex;gap:28px;font-size:14.5px;font-weight:600;}
+  nav.links a{text-decoration:none;color:var(--steel);position:relative;padding:4px 0;}
+  nav.links a:hover{color:var(--ink);}
+  .nav-cta{display:flex;align-items:center;gap:14px;}
+  .navbar .btn{padding:10px 18px;font-size:14px;}
+  .menu-toggle{display:none;background:none;border:none;cursor:pointer;padding:6px;}
+  .menu-toggle span{display:block;width:24px;height:2px;background:var(--ink);margin:5px 0;}
+
+  @media(max-width:880px){
+    nav.links{display:none;}
+    .menu-toggle{display:block;}
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    padding:64px 0 40px;
+    overflow:hidden;
+  }
+  .hero .wrap{
+    display:grid;grid-template-columns:1.05fr 0.95fr;gap:40px;align-items:center;
+  }
+  @media(max-width:940px){
+    .hero .wrap{grid-template-columns:1fr;}
+  }
+  .hero h1{
+    font-size:clamp(40px,6vw,68px);
+    font-weight:900;
+  }
+  .hero h1 em{
+    font-style:normal;color:var(--amber);
+  }
+  .hero p.lead{
+    font-size:18px;color:var(--steel);max-width:46ch;margin:20px 0 30px;
+  }
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:34px;}
+  .trust-strip{
+    display:flex;gap:28px;flex-wrap:wrap;
+    padding-top:22px;border-top:1px solid var(--line);
+  }
+  .trust-item{}
+  .trust-item .num{font-family:'IBM Plex Mono';font-weight:600;font-size:24px;color:var(--ink);}
+  .trust-item .label{font-size:12px;color:var(--steel);text-transform:uppercase;letter-spacing:.06em;}
+
+  /* Gauge */
+  .gauge-card{
+    background:var(--dark);
+    border-radius:20px;
+    padding:34px 30px 26px;
+    color:#fff;
+    position:relative;
+    box-shadow:0 30px 60px -20px rgba(18,24,29,0.45);
+  }
+  .gauge-top{display:flex;justify-content:space-between;align-items:center;font-family:'IBM Plex Mono';font-size:11.5px;color:#8ba0a8;text-transform:uppercase;letter-spacing:.1em;margin-bottom:10px;}
+  .gauge-top .dot{width:8px;height:8px;border-radius:50%;background:var(--lcd);display:inline-block;margin-right:6px;box-shadow:0 0 8px var(--lcd);}
+  .gauge-wrap{position:relative;display:flex;justify-content:center;padding:6px 0 8px;}
+  .gauge-readout{
+    text-align:center;margin-top:6px;
+  }
+  .gauge-readout .pf-val{font-family:'IBM Plex Mono';font-weight:600;font-size:38px;color:var(--lcd);text-shadow:0 0 18px rgba(55,255,160,.45);}
+  .gauge-readout .pf-tag{font-family:'IBM Plex Mono';font-size:11px;letter-spacing:.12em;color:#8ba0a8;text-transform:uppercase;margin-top:2px;}
+  .needle{transform-origin:100px 100px;animation:sweep 3.6s cubic-bezier(.5,0,.15,1) infinite;}
+  @keyframes sweep{
+    0%{transform:rotate(-58deg);}
+    55%{transform:rotate(48deg);}
+    75%{transform:rotate(48deg);}
+    100%{transform:rotate(-58deg);}
+  }
+  .gauge-legend{display:flex;justify-content:space-between;margin-top:14px;font-family:'IBM Plex Mono';font-size:10.5px;color:#8ba0a8;padding:0 6px;}
+
+  /* ---------- SECTION HEADERS ---------- */
+  .section-head{max-width:640px;margin-bottom:44px;}
+  .section-head h2{font-size:clamp(30px,4vw,44px);}
+  .section-head p{color:var(--steel);font-size:16.5px;margin-top:14px;}
+  .light-section{padding:88px 0;}
+  .panel-section{padding:88px 0;background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .dark-section{padding:96px 0;background:var(--dark);color:#fff;}
+  .dark-section .eyebrow{color:var(--lcd);}
+  .dark-section .eyebrow::before{background:var(--lcd);}
+  .dark-section h2{color:#fff;}
+  .dark-section p{color:#aab7bd;}
+
+  /* ---------- PROBLEM / STAT CHIPS ---------- */
+  .problem-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:50px;align-items:start;}
+  @media(max-width:900px){.problem-grid{grid-template-columns:1fr;}}
+  .problem-grid p{color:var(--steel);font-size:16px;margin:0 0 16px;}
+  .stat-chips{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  .chip{
+    background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px;
+  }
+  .chip .k{font-family:'IBM Plex Mono';font-weight:600;font-size:26px;color:var(--red);}
+  .chip .d{font-size:12.5px;color:var(--steel);margin-top:4px;}
+
+  .pf-donuts{display:flex;gap:16px;flex-wrap:wrap;margin-top:26px;}
+  .donut{width:74px;text-align:center;font-family:'IBM Plex Mono';font-size:10px;color:var(--steel);}
+  .donut svg{margin-bottom:6px;}
+
+  /* ---------- BENEFITS ---------- */
+  .benefit-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+  @media(max-width:980px){.benefit-grid{grid-template-columns:1fr 1fr;}}
+  @media(max-width:560px){.benefit-grid{grid-template-columns:1fr;}}
+  .benefit-card{
+    background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);
+    padding:24px 20px;
+  }
+  .benefit-card .idx{font-family:'IBM Plex Mono';color:var(--amber-ink);font-size:12px;letter-spacing:.1em;font-weight:600;}
+  .benefit-card h4{font-size:20px;margin-top:8px;text-transform:none;font-family:'Inter';font-weight:700;}
+  .benefit-card p{font-size:14px;color:var(--steel);margin-top:8px;}
+  .benefit-card .formula{font-family:'IBM Plex Mono';font-size:13px;background:var(--dark);color:var(--lcd);padding:8px 10px;border-radius:6px;margin-top:12px;display:inline-block;}
+
+  .datasheet{
+    margin-top:36px;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--dark);
+  }
+  .datasheet-head{padding:14px 20px;font-family:'IBM Plex Mono';font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#8ba0a8;border-bottom:1px solid #2a343c;}
+  table.ds{width:100%;border-collapse:collapse;font-family:'IBM Plex Mono';font-size:13.5px;color:#fff;}
+  table.ds th,table.ds td{padding:12px 16px;text-align:center;border-bottom:1px solid #2a343c;}
+  table.ds th{color:#8ba0a8;font-weight:500;text-transform:uppercase;font-size:11px;letter-spacing:.08em;}
+  table.ds td.hl{color:var(--lcd);font-weight:600;}
+  table.ds tr:last-child td{border-bottom:none;}
+
+  /* ---------- EXPLODED PANEL SCROLL SECTION ---------- */
+  .explode-outer{height:280vh;position:relative;}
+  .explode-sticky{
+    position:sticky;top:0;height:100vh;display:flex;align-items:center;overflow:hidden;
+  }
+  .explode-inner{max-width:var(--maxw);margin:0 auto;padding:0 28px;display:grid;grid-template-columns:0.9fr 1.1fr;gap:40px;align-items:center;width:100%;}
+  @media(max-width:900px){.explode-inner{grid-template-columns:1fr;}}
+  .explode-copy .section-head{margin-bottom:26px;}
+  .adv-list{display:flex;flex-direction:column;gap:10px;}
+  .adv-item{
+    display:flex;gap:12px;align-items:flex-start;padding:10px 14px;border-radius:10px;
+    background:var(--bg);border:1px solid var(--line);
+    opacity:0.35;transform:translateX(-8px);
+    transition:opacity .3s ease, transform .3s ease, background .3s ease;
+    font-size:14px;
+  }
+  .adv-item.active{opacity:1;transform:translateX(0);background:#fff;border-color:var(--amber);}
+  .adv-item .n{font-family:'IBM Plex Mono';color:var(--amber-ink);font-weight:600;font-size:12px;flex:none;width:22px;}
+  .explode-stage{position:relative;height:420px;}
+  .explode-stage svg{width:100%;height:100%;overflow:visible;}
+  .mod{transition:transform .05s linear;}
+
+  /* ---------- SERVICES ---------- */
+  .service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+  @media(max-width:900px){.service-grid{grid-template-columns:1fr 1fr;}}
+  @media(max-width:560px){.service-grid{grid-template-columns:1fr;}}
+  .service-card{
+    border:1px solid var(--line);border-radius:var(--radius);padding:22px;background:var(--panel);
+    display:flex;gap:14px;align-items:flex-start;
+  }
+  .service-card .ic{flex:none;width:38px;height:38px;border-radius:9px;background:#FFF1E4;display:flex;align-items:center;justify-content:center;}
+  .service-card .ic svg{width:20px;height:20px;}
+  .service-card h4{font-family:'Inter';font-weight:700;text-transform:none;font-size:15.5px;}
+  .service-card p{font-size:13.5px;color:var(--steel);margin-top:6px;}
+
+  /* ---------- INDUSTRIES ---------- */
+  .chip-cloud{display:flex;flex-wrap:wrap;gap:12px;}
+  .icloud-chip{
+    padding:10px 18px;border-radius:100px;border:1px solid var(--line);background:var(--panel);
+    font-size:14px;font-weight:600;color:var(--ink);
+  }
+
+  /* ---------- CLIENTS ---------- */
+  .client-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;}
+  @media(max-width:900px){.client-grid{grid-template-columns:repeat(3,1fr);}}
+  @media(max-width:560px){.client-grid{grid-template-columns:repeat(2,1fr);}}
+  .client-badge{
+    border:1px solid var(--line);border-radius:12px;background:var(--panel);
+    height:82px;display:flex;align-items:center;justify-content:center;
+    font-family:'Big Shoulders Display';font-weight:800;font-size:16px;text-align:center;
+    color:var(--steel);padding:8px;text-transform:uppercase;letter-spacing:.02em;
+  }
+
+  /* ---------- ABOUT ---------- */
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;}
+  @media(max-width:900px){.about-grid{grid-template-columns:1fr;}}
+  .about-card{background:var(--dark-2);border-radius:18px;padding:30px;color:#fff;}
+  .about-card .row{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #2a343c;font-size:14px;}
+  .about-card .row:last-child{border-bottom:none;}
+  .about-card .row .k{color:#8ba0a8;}
+  .about-card .row .v{font-family:'IBM Plex Mono';color:#fff;}
+
+  /* ---------- CONTACT ---------- */
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;}
+  @media(max-width:900px){.contact-grid{grid-template-columns:1fr;}}
+  .contact-card{background:var(--dark-2);border-radius:18px;padding:30px;}
+  .contact-line{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid #2a343c;}
+  .contact-line:last-child{border-bottom:none;}
+  .contact-line .ic{flex:none;width:22px;height:22px;color:var(--lcd);}
+  .contact-line .t{font-size:14px;color:#aab7bd;}
+  .contact-line .t strong{display:block;color:#fff;font-size:15px;margin-bottom:2px;}
+  form.qform{display:flex;flex-direction:column;gap:14px;}
+  form.qform input, form.qform textarea{
+    background:#1B232B;border:1px solid #2a343c;border-radius:8px;color:#fff;padding:13px 14px;
+    font-family:'Inter';font-size:14.5px;
+  }
+  form.qform input::placeholder, form.qform textarea::placeholder{color:#66737b;}
+  form.qform label{font-size:12px;color:#8ba0a8;text-transform:uppercase;letter-spacing:.08em;margin-bottom:-8px;}
+
+  footer{padding:34px 0;background:var(--dark);border-top:1px solid #2a343c;}
+  footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;color:#77848c;font-size:13px;}
+  footer a{text-decoration:none;color:#aab7bd;}
+
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease, transform .6s ease;}
+  .reveal.in{opacity:1;transform:translateY(0);}
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;}
+    html{scroll-behavior:auto;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="navbar">
+    <div class="brand">
+      <svg class="bolt" viewBox="0 0 20 26" fill="none"><path d="M12 0L0 15h7l-2 11L20 9h-8l0-9z" fill="#FF7A1A"/></svg>
+      <div>PUNIT POWERCARE<span class="small">APFC &amp; SWITCHGEAR CARE</span></div>
+    </div>
+    <nav class="links">
+      <a href="#about">About</a>
+      <a href="#problem">Power Factor</a>
+      <a href="#benefits">Benefits</a>
+      <a href="#services">Services</a>
+      <a href="#clients">Clients</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-primary" href="#contact">Get a Quote</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+  <div class="wrap">
+    <div class="reveal in">
+      <div class="eyebrow">Nashik · Since establishment · 24×7 service</div>
+      <h1>Fix your power factor. <em>Stop paying for power you never use.</em></h1>
+      <p class="lead">Punit Powercare designs and manufactures Thyristorised APFC panels and switchgear for industrial and commercial facilities — engineered in Nashik, trusted across Maharashtra.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#contact">Request a site assessment</a>
+        <a class="btn btn-ghost" href="#problem">See how it works ↓</a>
+      </div>
+      <div class="trust-strip">
+        <div class="trust-item"><div class="num">24×7</div><div class="label">Service backup</div></div>
+        <div class="trust-item"><div class="num">0.99</div><div class="label">Target power factor</div></div>
+        <div class="trust-item"><div class="num">3–15</div><div class="label">Month payback (typ.)</div></div>
+        <div class="trust-item"><div class="num">10+</div><div class="label">Industries served</div></div>
+      </div>
+    </div>
+
+    <div class="gauge-card reveal in">
+      <div class="gauge-top"><span><span class="dot"></span>LIVE PANEL READOUT</span><span>PF METER</span></div>
+      <div class="gauge-wrap">
+        <svg width="220" height="130" viewBox="0 0 200 120">
+          <path d="M10,100 A90,90 0 0,1 190,100" fill="none" stroke="#2a343c" stroke-width="14" stroke-linecap="round"/>
+          <path d="M10,100 A90,90 0 0,1 78,15" fill="none" stroke="#D62828" stroke-width="14" stroke-linecap="round"/>
+          <path d="M78,15 A90,90 0 0,1 190,100" fill="none" stroke="#1E8E5A" stroke-width="14" stroke-linecap="round" opacity="0.85"/>
+          <g class="needle">
+            <line x1="100" y1="100" x2="100" y2="26" stroke="#37FFA0" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="100" cy="100" r="7" fill="#37FFA0"/>
+          </g>
+        </svg>
+      </div>
+      <div class="gauge-readout">
+        <div class="pf-val">0.99</div>
+        <div class="pf-tag">Corrected power factor</div>
+      </div>
+      <div class="gauge-legend"><span>0.65 · Poor</span><span>0.90 · Fair</span><span>1.00 · Unity</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROBLEM ===================== -->
+<section class="panel-section" id="problem">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">The problem</div>
+      <h2>Low power factor is a hidden line item on your electricity bill</h2>
+    </div>
+    <div class="problem-grid">
+      <div class="reveal">
+        <p>Power factor is the ratio of working power to total power — the working power plus the non-productive reactive power circulating through your facility. Technically, it's the cosine of the angle between voltage and current.</p>
+        <p>A power factor between 0.95 and 1.0 means your electrical power is being put to maximum use. Anything below 0.9 means you're drawing more current than you need to deliver the same load — and paying for it through power factor penalties, reactive power charges, or surcharge fees.</p>
+        <p>Equipment like transformers, motors, air conditioners, furnaces, rolling mills, spinning mills and variable drives all shift the phase angle between current and voltage — which is exactly what drives that penalty up.</p>
+        <div class="pf-donuts">
+          <div class="donut">
+            <svg width="60" height="60" viewBox="0 0 60 60"><circle cx="30" cy="30" r="24" fill="none" stroke="#D7DBDE" stroke-width="8"/><circle cx="30" cy="30" r="24" fill="none" stroke="#D62828" stroke-width="8" stroke-dasharray="150.8" stroke-dashoffset="60.3" transform="rotate(-90 30 30)"/></svg>
+            PF 0.60
+          </div>
+          <div class="donut">
+            <svg width="60" height="60" viewBox="0 0 60 60"><circle cx="30" cy="30" r="24" fill="none" stroke="#D7DBDE" stroke-width="8"/><circle cx="30" cy="30" r="24" fill="none" stroke="#D62828" stroke-width="8" stroke-dasharray="150.8" stroke-dashoffset="105.6" transform="rotate(-90 30 30)"/></svg>
+            PF 0.70
+          </div>
+          <div class="donut">
+            <svg width="60" height="60" viewBox="0 0 60 60"><circle cx="30" cy="30" r="24" fill="none" stroke="#D7DBDE" stroke-width="8"/><circle cx="30" cy="30" r="24" fill="none" stroke="#1E8E5A" stroke-width="8" stroke-dasharray="150.8" stroke-dashoffset="30.2" transform="rotate(-90 30 30)"/></svg>
+            PF 0.90
+          </div>
+          <div class="donut">
+            <svg width="60" height="60" viewBox="0 0 60 60"><circle cx="30" cy="30" r="24" fill="none" stroke="#D7DBDE" stroke-width="8"/><circle cx="30" cy="30" r="24" fill="none" stroke="#1E8E5A" stroke-width="8" stroke-dasharray="150.8" stroke-dashoffset="1.5" transform="rotate(-90 30 30)"/></svg>
+            PF 0.99
+          </div>
+        </div>
+      </div>
+      <div class="stat-chips reveal">
+        <div class="chip"><div class="k">48%</div><div class="d">reduction in power losses when PF improves from 65% to 90% (losses scale with I²)</div></div>
+        <div class="chip"><div class="k">↓ I</div><div class="d">Lower current draw for the same active load, once power factor is corrected</div></div>
+        <div class="chip"><div class="k">↑ KW</div><div class="d">More usable working power available from the same KVA demand</div></div>
+        <div class="chip"><div class="k">↓ ₹</div><div class="d">Fewer reactive-power penalties and surcharges on your monthly bill</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BENEFITS ===================== -->
+<section class="light-section" id="benefits">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Why it pays for itself</div>
+      <h2>Power factor correction, in four numbers</h2>
+      <p>Investing in correction is an easy, economically sound decision — these systems typically pay back within 3 to 15 months, depending on your load profile and tariff structure.</p>
+    </div>
+    <div class="benefit-grid">
+      <div class="benefit-card reveal">
+        <div class="idx">BENEFIT 01</div>
+        <h4>Fewer distribution losses</h4>
+        <p>Losses are proportional to the square of the current. Improving PF from 65% to 90% cuts losses by roughly 48%.</p>
+        <div class="formula">% loss ↓ = 100 − (0.65/0.90)²</div>
+      </div>
+      <div class="benefit-card reveal">
+        <div class="idx">BENEFIT 02</div>
+        <h4>More usable KW</h4>
+        <p>KW = KVA × PF. A higher PF unlocks more working power from the same KVA demand — room for more motors or lighting without a bigger connection.</p>
+        <div class="formula">KW = KVA × PF</div>
+      </div>
+      <div class="benefit-card reveal">
+        <div class="idx">BENEFIT 03</div>
+        <h4>Better voltage regulation</h4>
+        <p>Reduced line voltage drop means steadier voltage at your equipment — and more efficient performance from motors and other electrical loads.</p>
+      </div>
+      <div class="benefit-card reveal">
+        <div class="idx">BENEFIT 04</div>
+        <h4>Smaller cable &amp; switchgear</h4>
+        <p>Lower current requirement means new installations can use smaller transformers, cables and switchgear — less upfront investment.</p>
+        <div class="formula">I = (KVA×10³)/(√3·V)</div>
+      </div>
+    </div>
+
+    <div class="datasheet reveal">
+      <div class="datasheet-head">600 KVA demand — available KW vs. power factor</div>
+      <table class="ds">
+        <tr><th>Power factor</th><td>60</td><td>70</td><td>80</td><td class="hl">90</td><td class="hl">100</td></tr>
+        <tr><th>Active power (KW)</th><td>360</td><td>420</td><td>480</td><td class="hl">540</td><td class="hl">600</td></tr>
+        <tr><th>Reactive power (KVAR)</th><td>480</td><td>428</td><td>360</td><td class="hl">262</td><td class="hl">0</td></tr>
+        <tr><th>Total power (KVA)</th><td>600</td><td>600</td><td>600</td><td>600</td><td>600</td></tr>
+      </table>
+    </div>
+
+    <p style="margin-top:22px;color:var(--steel);font-size:14.5px;max-width:70ch;">
+      <strong style="color:var(--ink);">Fixed capacitors vs. Thyristorised APFC:</strong>
+      fixed capacitor banks can over-compensate — pushing PF into "leading" territory, which carries its own penalty — and stay in circuit (and consuming power) even at low load. Punit Powercare's Thyristorised APFC switches capacitor steps in and out automatically, avoiding both problems.
+    </p>
+  </div>
+</section>
+
+<!-- ===================== EXPLODED PANEL / ADVANTAGES ===================== -->
+<section class="explode-outer" id="advantages">
+  <div class="explode-sticky">
+    <div class="explode-inner">
+      <div class="explode-copy">
+        <div class="section-head">
+          <div class="eyebrow">Inside the panel</div>
+          <h2>What Thyristorised switching actually gives you</h2>
+          <p style="font-size:14.5px;">Scroll through — the panel assembles as each advantage locks in. Scroll back up to watch it come apart.</p>
+        </div>
+        <div class="adv-list" id="advList">
+          <div class="adv-item"><span class="n">01</span><span>No inrush current — precise auto zero-current search logic on every switch.</span></div>
+          <div class="adv-item"><span class="n">02</span><span>No current or voltage surge, so transformer life goes up, not down.</span></div>
+          <div class="adv-item"><span class="n">03</span><span>No over-compensation — voltage condition stays clean and controlled.</span></div>
+          <div class="adv-item"><span class="n">04</span><span>Smooth, instant disconnection keeps the capacitor bank at maximum uptime.</span></div>
+          <div class="adv-item"><span class="n">05</span><span>Solid-state switching at 200V — no chattering or sparking, ever.</span></div>
+          <div class="adv-item"><span class="n">06</span><span>Controlled switching points maximise capacitor and switching-unit life.</span></div>
+          <div class="adv-item"><span class="n">07</span><span>Small steps mean tighter, closer compensation of power factor.</span></div>
+          <div class="adv-item"><span class="n">08</span><span>Load-delivering capacity rises proportionately, holding PF near unity.</span></div>
+          <div class="adv-item"><span class="n">09</span><span>Live parameter display, with RS-232 printout on demand.</span></div>
+          <div class="adv-item"><span class="n">10</span><span>No moving parts — genuinely maintenance-free.</span></div>
+          <div class="adv-item"><span class="n">11</span><span>Short payback period, long-term running savings.</span></div>
+        </div>
+      </div>
+
+      <div class="explode-stage">
+        <svg viewBox="0 0 400 420" id="explodeSvg">
+          <!-- cabinet frame -->
+          <rect x="60" y="30" width="280" height="360" rx="10" fill="none" stroke="#2a343c" stroke-width="2" stroke-dasharray="6 5"/>
+          <!-- module: door -->
+          <g class="mod" id="modDoor" style="transform:translate(-140px,-40px) rotate(-14deg);">
+            <rect x="70" y="45" width="120" height="330" rx="8" fill="#EEF0F1" stroke="#12181D" stroke-width="2"/>
+            <circle cx="130" cy="120" r="14" fill="#fff" stroke="#12181D" stroke-width="2"/>
+            <circle cx="130" cy="120" r="4" fill="#D62828"/>
+            <rect x="95" y="160" width="70" height="10" rx="3" fill="#5B6570"/>
+            <rect x="95" y="180" width="70" height="10" rx="3" fill="#5B6570"/>
+          </g>
+          <!-- module: meter -->
+          <g class="mod" id="modMeter" style="transform:translate(150px,-120px) rotate(10deg);">
+            <rect x="210" y="60" width="110" height="80" rx="8" fill="#12181D"/>
+            <rect x="222" y="72" width="86" height="30" rx="3" fill="#0E1114"/>
+            <text x="265" y="93" text-anchor="middle" font-family="IBM Plex Mono" font-size="12" fill="#37FFA0">PF 0.99</text>
+            <circle cx="230" cy="118" r="4" fill="#1E8E5A"/>
+            <circle cx="248" cy="118" r="4" fill="#FF7A1A"/>
+            <circle cx="266" cy="118" r="4" fill="#D62828"/>
+          </g>
+          <!-- module: breaker bank -->
+          <g class="mod" id="modBreaker" style="transform:translate(160px,90px) rotate(8deg);">
+            <rect x="215" y="180" width="100" height="120" rx="8" fill="#fff" stroke="#12181D" stroke-width="2"/>
+            <rect x="228" y="196" width="24" height="34" rx="3" fill="#D62828"/>
+            <rect x="258" y="196" width="24" height="34" rx="3" fill="#1E8E5A"/>
+            <rect x="228" y="240" width="24" height="34" rx="3" fill="#5B6570"/>
+            <rect x="258" y="240" width="24" height="34" rx="3" fill="#5B6570"/>
+          </g>
+          <!-- module: capacitor bank -->
+          <g class="mod" id="modCap" style="transform:translate(-160px,130px) rotate(-10deg);">
+            <rect x="80" y="200" width="90" height="130" rx="8" fill="#12181D"/>
+            <circle cx="105" cy="225" r="10" fill="none" stroke="#37FFA0" stroke-width="2"/>
+            <circle cx="135" cy="225" r="10" fill="none" stroke="#37FFA0" stroke-width="2"/>
+            <circle cx="105" cy="255" r="10" fill="none" stroke="#37FFA0" stroke-width="2"/>
+            <circle cx="135" cy="255" r="10" fill="none" stroke="#37FFA0" stroke-width="2"/>
+            <circle cx="105" cy="285" r="10" fill="none" stroke="#FF7A1A" stroke-width="2"/>
+            <circle cx="135" cy="285" r="10" fill="none" stroke="#FF7A1A" stroke-width="2"/>
+          </g>
+          <!-- module: busbar -->
+          <g class="mod" id="modBus" style="transform:translate(0px,-170px) rotate(0deg);">
+            <rect x="150" y="30" width="100" height="14" rx="3" fill="#D62828"/>
+            <rect x="150" y="48" width="100" height="14" rx="3" fill="#FF7A1A"/>
+            <rect x="150" y="66" width="100" height="14" rx="3" fill="#12181D"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SERVICES ===================== -->
+<section class="panel-section" id="services">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">What we do</div>
+      <h2>Manufacturing, supply and support — under one roof</h2>
+    </div>
+    <div class="service-grid">
+      <div class="service-card reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h16M4 6h10M4 18h7" stroke="#FF7A1A" stroke-width="2" stroke-linecap="round"/></svg></div><div><h4>Contactor-based APFC panels</h4><p>Manufactured in-house, built for reliable step-switching.</p></div></div>
+      <div class="service-card reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2v6M12 16v6M2 12h6M16 12h6" stroke="#FF7A1A" stroke-width="2" stroke-linecap="round"/></svg></div><div><h4>Thyristor-based APFC panels</h4><p>Our specialty — precise, sparkless, maintenance-free switching.</p></div></div>
+      <div class="service-card reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="2" stroke="#FF7A1A" stroke-width="2"/></svg></div><div><h4>LT Panels — PCC, MCC, PDB, PLC</h4><p>Plus fire panels and temperature control panels, made to spec.</p></div></div>
+      <div class="service-card reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l8 4-8 4-8-4 8-4z" stroke="#FF7A1A" stroke-width="2"/></svg></div><div><h4>Voltage stabilizers</h4><p>Servo and relay-based, normal and odd range, supplied and installed.</p></div></div>
+      <div class="service-card reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M6 3v18M18 3v18M6 12h12" stroke="#FF7A1A" stroke-width="2"/></svg></div><div><h4>UPS supply</h4><p>Sized and supplied for your facility's backup power needs.</p></div></div>
+      <div class="service-card reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 20l6-6 4 4 6-10" stroke="#FF7A1A" stroke-width="2" stroke-linecap="round"/></svg></div><div><h4>ACB &amp; VCB servicing</h4><p>Handled by an expert, well-trained field team.</p></div></div>
+      <div class="service-card reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#FF7A1A" stroke-width="2"/></svg></div><div><h4>AMC — APFC &amp; LT panels</h4><p>Comprehensive and non-comprehensive annual maintenance contracts.</p></div></div>
+      <div class="service-card reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M3 12h18M12 3v18" stroke="#FF7A1A" stroke-width="2" stroke-linecap="round"/></svg></div><div><h4>Panel material supply</h4><p>A single source for the electrical panel components you need.</p></div></div>
+      <div class="service-card reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z" stroke="#FF7A1A" stroke-width="2"/></svg></div><div><h4>RKVAH, AHF &amp; ASVG</h4><p>Leading RKVAH solutions plus active harmonic filter and ASVG supply.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== INDUSTRIES ===================== -->
+<section class="light-section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Who it's for</div>
+      <h2>Useful to almost any load-heavy operation</h2>
+    </div>
+    <div class="chip-cloud reveal">
+      <span class="icloud-chip">Rolling Mills</span>
+      <span class="icloud-chip">Furnace Loads</span>
+      <span class="icloud-chip">Cement Plants</span>
+      <span class="icloud-chip">Steel Plants</span>
+      <span class="icloud-chip">Automobile Industry</span>
+      <span class="icloud-chip">Any Industrial Unit</span>
+      <span class="icloud-chip">Commercial Complexes</span>
+      <span class="icloud-chip">Rice Mills</span>
+      <span class="icloud-chip">Stone Crushers</span>
+      <span class="icloud-chip">Hospitals</span>
+      <span class="icloud-chip">Restaurants</span>
+      <span class="icloud-chip">Hotels</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CLIENTS ===================== -->
+<section class="panel-section" id="clients">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Trusted by</div>
+      <h2>Our valuable clients</h2>
+      <p>A cross-section of the manufacturing, hospitality, healthcare and industrial names we've worked with.</p>
+    </div>
+    <div class="client-grid reveal">
+      <div class="client-badge">Croma</div>
+      <div class="client-badge">Datar</div>
+      <div class="client-badge">RIM Group</div>
+      <div class="client-badge">SB Polygreen</div>
+      <div class="client-badge">Agromark</div>
+      <div class="client-badge">MediLiv Hospital</div>
+      <div class="client-badge">Liebherr</div>
+      <div class="client-badge">Jakson</div>
+      <div class="client-badge">Ashoka</div>
+      <div class="client-badge">Medicover Hospitals</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ABOUT ===================== -->
+<section class="dark-section" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="reveal">
+        <div class="eyebrow">About us</div>
+        <h2 style="font-size:clamp(28px,4vw,42px);">Real care of customers <em style="color:var(--lcd);font-style:normal;">and</em> equipment</h2>
+        <p style="margin-top:18px;font-size:16px;">24×7 Punit Powercare is a well-known name in power management and electricity — one of the pioneers in developing Thyristorised APFC systems in the region. We're known as much for after-sales service as for the panels themselves, because a panel that isn't supported isn't really a solution.</p>
+        <p style="margin-top:14px;font-size:16px;">Dedicated, knowledgeable staff are available seven days a week, twenty-four hours a day, to answer questions and dispatch a field service technician — during the warranty period, and after it, under AMC.</p>
+        <div class="hero-ctas" style="margin-top:26px;">
+          <a class="btn btn-primary" href="#contact">Talk to our team</a>
+        </div>
+      </div>
+      <div class="about-card reveal">
+        <div class="row"><span class="k">Entity</span><span class="v">Punit Powercare</span></div>
+        <div class="row"><span class="k">Focus</span><span class="v">APFC &amp; Switchgear Care</span></div>
+        <div class="row"><span class="k">Registered office</span><span class="v">Nashik, Maharashtra</span></div>
+        <div class="row"><span class="k">Workshop</span><span class="v">MIDC Ambad, Nashik</span></div>
+        <div class="row"><span class="k">Support</span><span class="v">24×7, 7 days/week</span></div>
+        <div class="row"><span class="k">Speciality</span><span class="v">Thyristorised APFC</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section class="dark-section" id="contact" style="background:var(--dark-2);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Get in touch</div>
+      <h2>Request a site assessment</h2>
+      <p>Tell us about your load and current power factor — we'll get back with a straightforward recommendation.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card reveal">
+        <div class="contact-line">
+          <svg class="ic" viewBox="0 0 24 24" fill="none"><path d="M3 5h18M3 12h18M3 19h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <div class="t"><strong>Ganesh Yeole</strong>+91 75798 53838</div>
+        </div>
+        <div class="contact-line">
+          <svg class="ic" viewBox="0 0 24 24" fill="none"><path d="M4 4h16v16H4z" stroke="currentColor" stroke-width="2"/><path d="M4 6l8 7 8-7" stroke="currentColor" stroke-width="2"/></svg>
+          <div class="t"><strong>Email</strong>punitpowercare@gmail.com</div>
+        </div>
+        <div class="contact-line">
+          <svg class="ic" viewBox="0 0 24 24" fill="none"><path d="M12 22s7-6.2 7-12A7 7 0 105 10c0 5.8 7 12 7 12z" stroke="currentColor" stroke-width="2"/></svg>
+          <div class="t"><strong>Registered office</strong>Flat No. 11, Geetganga Society, Saptashrungi Nagar, Old Saykheda Road, Jail Road, Nashik – 422101</div>
+        </div>
+        <div class="contact-line">
+          <svg class="ic" viewBox="0 0 24 24" fill="none"><path d="M3 21V8l9-5 9 5v13" stroke="currentColor" stroke-width="2"/></svg>
+          <div class="t"><strong>Workshop</strong>MIDC Ambad, Nashik, Maharashtra – 422110</div>
+        </div>
+      </div>
+
+      <form class="qform reveal" action="mailto:punitpowercare@gmail.com" method="post" enctype="text/plain">
+        <label>Name</label>
+        <input type="text" name="Name" placeholder="Your name" required>
+        <label>Company</label>
+        <input type="text" name="Company" placeholder="Your company">
+        <label>Phone</label>
+        <input type="tel" name="Phone" placeholder="Contact number" required>
+        <label>What do you need?</label>
+        <textarea name="Message" rows="4" placeholder="e.g. APFC panel for a 500 KVA load, current PF around 0.75"></textarea>
+        <button class="btn btn-primary" type="submit" style="margin-top:6px;">Send enquiry</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© <span id="year"></span> Punit Powercare. APFC &amp; Switchgear Care.</div>
+    <div><a href="tel:+917579853838">+91 75798 53838</a> &nbsp;·&nbsp; <a href="mailto:punitpowercare@gmail.com">punitpowercare@gmail.com</a></div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // mobile menu (simple toggle of nav.links display)
+  const toggle = document.getElementById('menuToggle');
+  const links = document.querySelector('nav.links');
+  toggle.addEventListener('click', () => {
+    const open = links.style.display === 'flex';
+    links.style.display = open ? 'none' : 'flex';
+    links.style.cssText += open ? '' : 'position:absolute;top:64px;left:0;right:0;background:#EEF0F1;flex-direction:column;padding:20px 28px;border-bottom:1px solid #D7DBDE;gap:16px;';
+  });
+
+  // reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+  }, {threshold:0.15});
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // exploded panel scroll-linked assembly
+  const explodeOuter = document.getElementById('advantages');
+  const modules = {
+    modDoor:   {dx:-140, dy:-40, r:-14},
+    modMeter:  {dx:150,  dy:-120,r:10},
+    modBreaker:{dx:160,  dy:90,  r:8},
+    modCap:    {dx:-160, dy:130, r:-10},
+    modBus:    {dx:0,    dy:-170,r:0}
+  };
+  const advItems = document.querySelectorAll('.adv-item');
+
+  function clamp(v,min,max){ return Math.max(min, Math.min(max, v)); }
+
+  function onScroll(){
+    const rect = explodeOuter.getBoundingClientRect();
+    const total = explodeOuter.offsetHeight - window.innerHeight;
+    let progress = (-rect.top) / total;
+    progress = clamp(progress, 0, 1);
+
+    // modules converge (assemble) as progress -> 1, explode apart as progress -> 0
+    Object.keys(modules).forEach(id => {
+      const el = document.getElementById(id);
+      const m = modules[id];
+      const inv = 1 - progress;
+      const x = m.dx * inv;
+      const y = m.dy * inv;
+      const rot = m.r * inv;
+      el.style.transform = `translate(${x}px,${y}px) rotate(${rot}deg)`;
+    });
+
+    // advantage list items light up sequentially with progress
+    const activeCount = Math.round(progress * advItems.length);
+    advItems.forEach((item, i) => {
+      item.classList.toggle('active', i < activeCount);
+    });
+  }
+
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', onScroll);
+  onScroll();
+</script>
+
+</body>
+</html>
