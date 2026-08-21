@@ -1,0 +1,4 @@
+
+
+-- Header file , sitemap , robots.txt the og:url and canonical url needs to be updated
+once we have .com domain
