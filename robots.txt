@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://punit-powercare-website.vercel.app/sitemap.xml
