@@ -188,11 +188,11 @@
       --steel: #5B6570;
       --line: #D7DBDE;
       --amber: #FF7A1A;
-      --amber-ink: #8a3f00;
+      --amber-ink: #A64705;
       --red: #D62828;
       --green: #1E8E5A;
-      --dark: #12181D;
-      --dark-2: #1B232B;
+      --dark: #0E1114;
+      --dark-2: #1A2026;
       --lcd: #37FFA0;
       --radius: 14px;
       --maxw: 1180px;
@@ -808,6 +808,80 @@
 
     table.ds tr:last-child td {
       border-bottom: none;
+    }
+
+
+    /* ---------- GALLERY CAROUSEL ---------- */
+    .carousel-container {
+      width: 100%;
+      overflow: hidden;
+      margin-top: 40px;
+      padding: 10px 0;
+      mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+      -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    }
+    .carousel-track {
+      display: flex;
+      width: max-content;
+      gap: 30px;
+      animation: scrollCarousel 20s linear infinite;
+    }
+    .slide-group {
+      display: flex;
+      gap: 30px;
+    }
+    .carousel-container:hover .carousel-track {
+      animation-play-state: paused;
+    }
+    @keyframes scrollCarousel {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(calc(-50% - 15px)); }
+    }
+    .card-wrapper {
+      position: relative;
+      width: 400px;
+      height: 280px;
+      border-radius: var(--radius);
+      padding: 4px; 
+      overflow: hidden;
+      background: var(--dark-2);
+      flex-shrink: 0;
+    }
+    .card-wrapper::before {
+      content: "";
+      position: absolute;
+      top: -50%; left: -50%; width: 200%; height: 200%;
+      background: conic-gradient(transparent, transparent, transparent, var(--amber));
+      animation: rotateBorder 4s linear infinite;
+      z-index: 0;
+    }
+    .card-inner {
+      position: absolute;
+      inset: 4px;
+      border-radius: calc(var(--radius) - 4px);
+      background: var(--dark);
+      z-index: 1;
+      overflow: hidden;
+    }
+    .card-inner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.85;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    .card-wrapper:hover .card-inner img {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+    @keyframes rotateBorder {
+      100% { transform: rotate(360deg); }
+    }
+    @media (max-width: 900px) {
+      .card-wrapper {
+        width: 300px;
+        height: 220px;
+      }
     }
 
     /* ---------- EXPLODED PANEL SCROLL SECTION ---------- */
@@ -1687,6 +1761,64 @@
           <div>
             <h4>RKVAH, AHF &amp; ASVG</h4>
             <p>Leading RKVAH solutions plus active harmonic filter and ASVG supply.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALLERY / CAROUSEL ===================== -->
+  <section class="dark-section" id="gallery">
+    <div class="wrap" style="max-width: 100%;">
+      <div class="section-head reveal" style="max-width: var(--maxw); margin: auto;">
+        <div class="eyebrow">Our Work</div>
+        <h2>Panels built to precision</h2>
+      </div>
+      <div class="carousel-container reveal">
+        <div class="carousel-track">
+          <div class="slide-group">
+            <div class="card-wrapper">
+              <div class="card-inner">
+                <img src="https://placehold.co/600x400/1B232B/FF7A1A?text=Panel+Image+1" alt="Placeholder 1">
+              </div>
+            </div>
+            <div class="card-wrapper">
+              <div class="card-inner">
+                <img src="https://placehold.co/600x400/1B232B/FF7A1A?text=Panel+Image+2" alt="Placeholder 2">
+              </div>
+            </div>
+            <div class="card-wrapper">
+              <div class="card-inner">
+                <img src="https://placehold.co/600x400/1B232B/FF7A1A?text=Panel+Image+3" alt="Placeholder 3">
+              </div>
+            </div>
+            <div class="card-wrapper">
+              <div class="card-inner">
+                <img src="https://placehold.co/600x400/1B232B/FF7A1A?text=Panel+Image+4" alt="Placeholder 4">
+              </div>
+            </div>
+          </div>
+          <div class="slide-group" aria-hidden="true">
+            <div class="card-wrapper">
+              <div class="card-inner">
+                <img src="https://placehold.co/600x400/1B232B/FF7A1A?text=Panel+Image+1" alt="Placeholder 1">
+              </div>
+            </div>
+            <div class="card-wrapper">
+              <div class="card-inner">
+                <img src="https://placehold.co/600x400/1B232B/FF7A1A?text=Panel+Image+2" alt="Placeholder 2">
+              </div>
+            </div>
+            <div class="card-wrapper">
+              <div class="card-inner">
+                <img src="https://placehold.co/600x400/1B232B/FF7A1A?text=Panel+Image+3" alt="Placeholder 3">
+              </div>
+            </div>
+            <div class="card-wrapper">
+              <div class="card-inner">
+                <img src="https://placehold.co/600x400/1B232B/FF7A1A?text=Panel+Image+4" alt="Placeholder 4">
+              </div>
+            </div>
           </div>
         </div>
       </div>
