@@ -87,9 +87,9 @@ export function SiteHeader() {
       )}
     >
       <div className="mx-auto flex max-w-[1180px] items-center justify-between px-5 py-3.5 sm:px-7">
-        <a href="#top" className="flex items-center gap-2.5 text-fg">
-          <img src="/Punit-PowerCare-Brand-Name.svg" alt="Punit Powercare" className="h-8 sm:h-10 w-auto" />
-          <span className="hidden sm:block mt-0.5 font-mono text-[9.5px] font-medium tracking-[0.14em] text-muted normal-case">
+        <a href="#top" className="flex flex-col items-start gap-1 text-fg">
+          <img src="/Punit-PowerCare-Brand-Name.svg" alt="Punit Powercare" className="h-6 sm:h-8 w-auto" />
+          <span className="font-mono text-[8px] sm:text-[9.5px] font-medium tracking-[0.1em] sm:tracking-[0.14em] text-muted normal-case leading-none">
             Success with Punit Powercare
           </span>
         </a>
