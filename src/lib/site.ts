@@ -1,8 +1,8 @@
 export const SITE = {
   name: "Punit Powercare",
-  tagline: "APFC & Switchgear Care",
-  phone: "+917579853838",
-  phoneDisplay: "+91 75798 53838",
+  tagline: "Success with Punit Powercare",
+  phone: "+919579853838",
+  phoneDisplay: "+91 95798 53838",
   email: "punitpowercare@gmail.com",
   contact: "Ganesh Yeole",
   office:
@@ -170,7 +170,7 @@ export const FAQS = [
   },
   {
     q: "Where is Punit Powercare located, and which areas do you service?",
-    a: "Punit Powercare's registered office is in Nashik (Saptashrungi Nagar, Nashik – 422101) and our workshop is in MIDC Ambad, Nashik – 422110. We primarily serve clients across Maharashtra, with a strong presence in Nashik and the surrounding industrial belt. Contact us at +91 75798 53838 or punitpowercare@gmail.com.",
+    a: "Punit Powercare's registered office is in Nashik (Saptashrungi Nagar, Nashik – 422101) and our workshop is in MIDC Ambad, Nashik – 422110. We primarily serve clients across Maharashtra, with a strong presence in Nashik and the surrounding industrial belt. Contact us at +91 95798 53838 or punitpowercare@gmail.com.",
   },
   {
     q: "Do you provide 24×7 emergency service support?",

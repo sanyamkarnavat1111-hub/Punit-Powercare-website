@@ -88,12 +88,9 @@ export function SiteHeader() {
     >
       <div className="mx-auto flex max-w-[1180px] items-center justify-between px-5 py-3.5 sm:px-7">
         <a href="#top" className="flex items-center gap-2.5 text-fg">
-          <Bolt className="h-6 w-5 text-primary" />
-          <span className="font-headline text-[22px] font-extrabold uppercase leading-none tracking-wide">
-            Punit Powercare
-            <span className="mt-0.5 block font-mono text-[9.5px] font-medium tracking-[0.14em] text-muted normal-case">
-              APFC & Switchgear Care
-            </span>
+          <img src="/Punit-PowerCare-Brand-Name.svg" alt="Punit Powercare" className="h-8 sm:h-10 w-auto" />
+          <span className="hidden sm:block mt-0.5 font-mono text-[9.5px] font-medium tracking-[0.14em] text-muted normal-case">
+            Success with Punit Powercare
           </span>
         </a>
 
@@ -165,6 +162,10 @@ export function SiteFooter() {
           <a href="#terms" className="text-fg/70 hover:text-fg">
             Terms
           </a>
+          <div className="mt-4 flex items-center gap-2.5 opacity-90">
+            <img src="/Cropped-ISO.svg" alt="ISO 9001 Certified" className="h-10 w-auto" />
+            <span className="text-[13px] font-medium text-fg">ISO Certified Manufacturer</span>
+          </div>
         </div>
         <div className="flex flex-wrap gap-x-3">
           <a href={`tel:${SITE.phone}`} className="hover:text-fg">
