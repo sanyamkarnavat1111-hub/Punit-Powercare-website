@@ -25,12 +25,12 @@ export function SceneChip() {
   const pf = (0.72 + progress * 0.27).toFixed(2);
   return (
     <div className="hidden items-center gap-3 font-mono text-[11px] tracking-[0.12em] uppercase xl:flex">
-      <span className="flex items-center gap-2 text-bg">
-        <span className="inline-block size-1.5 rounded-full bg-primary shadow-none" />
+      <span className="flex items-center gap-2 text-lcd">
+        <span className="inline-block size-1.5 rounded-full bg-lcd shadow-[0_0_8px_var(--color-lcd)]" />
         0{index + 1} · {clip.label}
       </span>
-      <span className="text-bg/60">PF</span>
-      <span className="tabular-nums font-bold text-bg">{pf}</span>
+      <span className="text-muted">PF</span>
+      <span className="tabular-nums text-lcd">{pf}</span>
     </div>
   );
 }
@@ -80,23 +80,23 @@ export function SiteHeader() {
   return (
     <header
       className={cn(
-        "sticky top-0 z-50 border-b transition-[background,border-color] duration-200 text-bg",
+        "sticky top-0 z-50 border-b transition-[background,border-color] duration-200",
         scrolled || open
-          ? "border-black/10 bg-fg/95 backdrop-blur-md shadow-sm"
-          : "border-transparent bg-fg",
+          ? "border-white/10 bg-bg/80 backdrop-blur-md"
+          : "border-transparent bg-transparent",
       )}
     >
       <div className="mx-auto flex max-w-[1180px] items-center justify-between px-5 py-3.5 sm:px-7">
         <a href="#top" className="flex flex-col items-start gap-1 mt-1">
           <img src="/Punit-PowerCare-Brand-Name.svg" alt="Punit Powercare" className="h-8 sm:h-10 w-auto" />
-          <span className="font-mono text-[10px] sm:text-[11px] font-medium tracking-[0.12em] sm:tracking-[0.14em] text-bg/70 normal-case leading-none">
+          <span className="font-mono text-[10px] sm:text-[11px] font-medium tracking-[0.12em] sm:tracking-[0.14em] text-muted normal-case leading-none">
             Success with Punit Powercare
           </span>
         </a>
 
         <nav className="hidden items-center gap-7 text-[14.5px] font-semibold md:flex">
           {NAV.map((l) => (
-            <a key={l.href} href={l.href} className="text-bg/60 transition-colors hover:text-bg">
+            <a key={l.href} href={l.href} className="text-muted transition-colors hover:text-fg">
               {l.label}
             </a>
           ))}
@@ -123,13 +123,13 @@ export function SiteHeader() {
       </div>
 
       {open && (
-        <div className="border-t border-black/10 bg-fg/95 px-6 py-5 backdrop-blur-md md:hidden">
+        <div className="border-t border-white/10 bg-bg/95 px-6 py-5 backdrop-blur-md md:hidden">
           <nav className="flex flex-col gap-1">
             {NAV.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
-                className="rounded-lg px-2 py-3 text-base font-semibold text-bg hover:bg-black/5"
+                className="rounded-lg px-2 py-3 text-base font-semibold text-fg"
                 onClick={() => setOpen(false)}
               >
                 {l.label}
