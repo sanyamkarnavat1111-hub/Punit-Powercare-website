@@ -459,13 +459,18 @@ export function Gallery() {
           {slides.map((g, i) => (
             <div
               key={`${g.src}-${i}`}
-              className="relative h-[220px] w-[300px] shrink-0 overflow-hidden rounded-[14px] shadow-[0_0_0_1px_rgba(255,122,26,0.35)] sm:h-[280px] sm:w-[400px]"
+              className="group relative h-[220px] w-[300px] shrink-0 overflow-hidden rounded-[14px] shadow-[0_0_0_1px_rgba(255,122,26,0.35)] sm:h-[280px] sm:w-[400px]"
             >
               <img
                 src={g.src}
                 alt={g.alt}
-                className="h-full w-full object-cover opacity-90 transition duration-300 hover:scale-105 hover:opacity-100"
+                className="h-full w-full object-cover opacity-90 transition duration-300 group-hover:scale-105 group-hover:opacity-100"
               />
+              <div className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 to-transparent p-4 pt-16">
+                <span className="block text-sm font-semibold tracking-wide text-white drop-shadow-md sm:text-[15px]">
+                  {g.label}
+                </span>
+              </div>
             </div>
           ))}
         </div>

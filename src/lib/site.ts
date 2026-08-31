@@ -43,20 +43,84 @@ export const WORLD_CLIPS = [
 
 export const GALLERY = [
   {
-    src: "/assets/gallery/cabinet.jpg",
-    alt: "Closed Thyristorised APFC cabinet in the Nashik workshop",
+    src: "/assets/gallery/ACB-Servicing.jpeg",
+    alt: "ACB Servicing",
+    label: "ACB Servicing",
   },
   {
-    src: "/assets/gallery/open-panel.jpg",
-    alt: "Open APFC panel showing capacitor bank and copper busbars",
+    src: "/assets/gallery/AMF-Panel.jpeg",
+    alt: "AMF Panel",
+    label: "AMF Panel",
   },
   {
-    src: "/assets/gallery/thyristor.jpg",
-    alt: "Thyristor SCR switching modules with heat sinks",
+    src: "/assets/gallery/Changeover-with-PDB-Panel.jpeg",
+    alt: "Changeover with PDB Panel",
+    label: "Changeover with PDB Panel",
   },
   {
-    src: "/assets/gallery/meters.jpg",
-    alt: "Live APFC panel door with mint LCD meters and status lamps",
+    src: "/assets/gallery/Contractor-Based-APFC-Panel.jpeg",
+    alt: "Contractor Based APFC Panel",
+    label: "Contractor Based APFC Panel",
+  },
+  {
+    src: "/assets/gallery/Control-Desk-Panel.jpeg",
+    alt: "Control Desk Panel",
+    label: "Control Desk Panel",
+  },
+  {
+    src: "/assets/gallery/Hybrid-APFC-Panel.jpeg",
+    alt: "Hybrid APFC Panel",
+    label: "Hybrid APFC Panel",
+  },
+  {
+    src: "/assets/gallery/L-Shaped-PDB-Panel.jpeg",
+    alt: "L-Shaped PDB Panel",
+    label: "L-Shaped PDB Panel",
+  },
+  {
+    src: "/assets/gallery/MCC-Panel.jpeg",
+    alt: "MCC Panel",
+    label: "MCC Panel",
+  },
+  {
+    src: "/assets/gallery/PCC-Panel.jpeg",
+    alt: "PCC Panel",
+    label: "PCC Panel",
+  },
+  {
+    src: "/assets/gallery/PDB-Panel.jpeg",
+    alt: "PDB Panel",
+    label: "PDB Panel",
+  },
+  {
+    src: "/assets/gallery/PDB-Panel-2.jpeg",
+    alt: "PDB Panel 2",
+    label: "PDB Panel 2",
+  },
+  {
+    src: "/assets/gallery/SVG-Panel.jpeg",
+    alt: "SVG Panel",
+    label: "SVG Panel",
+  },
+  {
+    src: "/assets/gallery/Thyristor-Based-APFC-Panel.jpeg",
+    alt: "Thyristor Based APFC Panel",
+    label: "Thyristor Based APFC Panel",
+  },
+  {
+    src: "/assets/gallery/Thyristor-Based-APFC-Panel-2.jpeg",
+    alt: "Thyristor Based APFC Panel 2",
+    label: "Thyristor Based APFC Panel 2",
+  },
+  {
+    src: "/assets/gallery/Thyristor-With-Reactor-Based-APFC-Panel.jpeg",
+    alt: "Thyristor With Reactor Based APFC Panel",
+    label: "Thyristor With Reactor Based APFC Panel",
+  },
+  {
+    src: "/assets/gallery/VCB-Servicing.jpeg",
+    alt: "VCB Servicing",
+    label: "VCB Servicing",
   },
 ] as const;
 
