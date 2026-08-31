@@ -93,11 +93,6 @@ export const GALLERY = [
     label: "PDB Panel",
   },
   {
-    src: "/assets/gallery/PDB-Panel-2.jpeg",
-    alt: "PDB Panel 2",
-    label: "PDB Panel 2",
-  },
-  {
     src: "/assets/gallery/SVG-Panel.jpeg",
     alt: "SVG Panel",
     label: "SVG Panel",
@@ -106,11 +101,6 @@ export const GALLERY = [
     src: "/assets/gallery/Thyristor-Based-APFC-Panel.jpeg",
     alt: "Thyristor Based APFC Panel",
     label: "Thyristor Based APFC Panel",
-  },
-  {
-    src: "/assets/gallery/Thyristor-Based-APFC-Panel-2.jpeg",
-    alt: "Thyristor Based APFC Panel 2",
-    label: "Thyristor Based APFC Panel 2",
   },
   {
     src: "/assets/gallery/Thyristor-With-Reactor-Based-APFC-Panel.jpeg",
