@@ -90,7 +90,7 @@ export function SiteHeader() {
         <a href="#top" className="flex flex-col items-start gap-1 mt-1">
           <img src="/Punit-PowerCare-Brand-Name.svg" alt="Punit Powercare" className="h-8 sm:h-10 w-auto" />
           <span className="font-mono text-[10px] sm:text-[11px] font-medium tracking-[0.12em] sm:tracking-[0.14em] text-muted normal-case leading-none">
-            Success with Punit Powercare
+            Switch to Success with Punit Powercare
           </span>
         </a>
 
@@ -162,9 +162,9 @@ export function SiteFooter() {
           <a href="#terms" className="text-fg/70 hover:text-fg">
             Terms
           </a>
-          <div className="mt-4 flex items-center gap-2.5 opacity-90">
-            <img src="/Cropped-ISO.svg" alt="ISO 9001 Certified" className="h-10 w-auto" />
-            <span className="text-[13px] font-medium text-fg">ISO Certified Manufacturer</span>
+          <div className="mt-4 flex items-center gap-3 opacity-90">
+            <img src="/Cropped-ISO.svg" alt="ISO Certification" className="h-14 w-14 sm:h-16 sm:w-16 rounded-full object-contain" />
+            <span className="text-[13px] font-medium text-fg uppercase">AN 9001-2015 ISO CERTIFIED COMPANY</span>
           </div>
         </div>
         <div className="flex flex-wrap gap-x-3">

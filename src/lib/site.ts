@@ -1,6 +1,6 @@
 export const SITE = {
   name: "Punit Powercare",
-  tagline: "Success with Punit Powercare",
+  tagline: "Switch to Success with Punit Powercare",
   phone: "+919579853838",
   phoneDisplay: "+91 95798 53838",
   email: "punitpowercare@gmail.com",
