@@ -1,8 +1,8 @@
 import { useEffect, useState, type ReactNode } from "react";
 import { Menu, X } from "lucide-react";
 import { SITE, WORLD_CLIPS } from "@/lib/site";
-import { useWorldProgress } from "@/lib/world-progress";
 import { cn } from "@/lib/utils";
+import { useWorldProgress } from "@/lib/world-progress";
 
 const NAV = [
   { href: "#about", label: "About" },
@@ -106,7 +106,7 @@ export function SiteHeader() {
           <SceneChip />
           <a
             href="#contact"
-            className="btn-press hidden rounded-lg bg-primary px-4 py-2.5 text-sm font-bold text-primary-ink shadow-[0_5px_0_0_#b5580a] sm:inline-flex"
+            className="btn-press inline-flex rounded-lg bg-primary px-4 py-2.5 text-sm font-bold text-primary-ink shadow-[0_5px_0_0_#b5580a]"
           >
             Get a Quote
           </a>

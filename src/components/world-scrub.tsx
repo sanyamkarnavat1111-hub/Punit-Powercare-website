@@ -16,7 +16,7 @@ function clipOpacity(p: number, i: number, n: number, fade: number) {
   const fullIn = i === 0 ? 0 : i / n + fade;
   const fullOut = i === n - 1 ? 1 : (i + 1) / n - fade;
   const end = i === n - 1 ? 1 : (i + 1) / n + fade;
-  if (p <= start || p >= end) return 0;
+  if (p < start || p > end) return 0;
   if (p < fullIn) return (p - start) / Math.max(0.0001, fullIn - start);
   if (p > fullOut) return 1 - (p - fullOut) / Math.max(0.0001, end - fullOut);
   return 1;
