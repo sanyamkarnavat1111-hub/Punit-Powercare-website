@@ -38,3 +38,5 @@ migrations/
 startup.sh
 .node_modules.lock
 ffmpeg.zip
+
+Punit-Powercare-mail-credentials.txt
